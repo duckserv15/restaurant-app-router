@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/backend/service/userService.js", "app/backend/service/authService.js", "app/backend/lib/prismaSingleton.js"  ],
   "exclude": [
     "node_modules"
   ]

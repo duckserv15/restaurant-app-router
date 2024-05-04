@@ -1,8 +1,7 @@
 import { Inter } from "next/font/google";
 import 'bootstrap/dist/css/bootstrap.css';
 import "./globals.css";
-
-import DefaultHeader from "./components/headers/DefaultHeader";
+import StickyNavbar from "./components/headers/navBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,9 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <>
-        <DefaultHeader/>
-        </>
+       <StickyNavbar/>
         {children}
         <h1>footer</h1>
       </body>

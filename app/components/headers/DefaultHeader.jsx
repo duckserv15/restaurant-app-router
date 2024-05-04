@@ -1,3 +1,5 @@
+"use"
+
 import Link from "next/link";
 import Menus from "./Menus";
 import SearchBtn from "./SearchBtn";
@@ -10,7 +12,7 @@ const DefaultHeader = ({ openSearchModal }) => {
           <div className="row">
             <div className="col-lg-7">
               <div className="top-left">
-                <span className="text">
+                <span className="sticky top-0 w-full bg-slate-200 z-30 shadow-sm">
                   Free delivery untuk pembelian diatas IDR 100.000,Order Sekarang!
                 </span>
               </div>

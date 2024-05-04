@@ -83,9 +83,7 @@ model Order {
 
 model OrderItem {
   id        Int      @id @default(autoincrement()) @map("id")
-  orderDate DateTime @map("order_date")
   price     Float    @map("price")
-  status    String   @map("status")
   quantity  Int      @map("quantity")
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

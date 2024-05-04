@@ -20,6 +20,16 @@ class UserService {
 
     return user
   } 
+
+  getUserById =async(id)=> {
+    const user = await prismaClient.user.findFirst({
+      where: {
+        id,
+      }
+    })
+
+    return user
+  } 
 }
 
 export default new UserService()

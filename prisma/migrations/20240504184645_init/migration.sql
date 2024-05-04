@@ -62,9 +62,7 @@ CREATE TABLE "order" (
 -- CreateTable
 CREATE TABLE "order_item" (
     "id" SERIAL NOT NULL,
-    "order_date" TIMESTAMP(3) NOT NULL,
     "price" DOUBLE PRECISION NOT NULL,
-    "status" TEXT NOT NULL,
     "quantity" INTEGER NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,

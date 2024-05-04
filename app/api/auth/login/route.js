@@ -7,10 +7,11 @@ export async function POST(req) {
 
   const user = await authService.login(email,password)
 
-  const {password : pass, ...rest} = user
-
   if(!user){ 
     return NextResponse.json({data : "login failed"})
   }
+  
+  const {password : pass, ...rest} = user
+
   return NextResponse.json({data : rest})
 }
